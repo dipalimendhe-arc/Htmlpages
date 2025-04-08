@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #5087be;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .header {
+            background-image: url('header-bg.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .animate-title {
+            color: #5087be; /* Change this to your desired color */
+            text-align: center; /* Center the heading */
+        }
+
+        .animate-subtitle {
+            color: #142f49; /* Change this to your desired color */
+            text-align: center; /* Center the subtitle */
+        }
+
+        .services-grid, .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card, .client-review {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #5087be;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="animate-title">Welcome to IT Solutions</h1>
+        <p class="animate-subtitle">Innovative Technology for a Better Tomorrow</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card animate-card">
+                <img src="web-development.jpg" alt="Web Development" class="service-image">
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites tailored to your business needs.</p>
+            </div>
+            <div class="service-card animate-card">
+                <img src="cloud-computing.jpg" alt="Cloud Computing" class="service-image">
+                <h3>Cloud Computing</h3>
+                <p>Scalable and secure cloud solutions to enhance your business operations.</p>
+            </div>
+            <div class="service-card animate-card">
+                <img src="cybersecurity.jpg" alt="Cybersecurity" class="service-image">
+                <h3>Cybersecurity</h3>
+                <p>Protecting your data and systems with cutting-edge security measures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients" id="clients">
+        <h2>What Our Clients Say</h2>
+        <div class="client-review">
+            <p>"IT Solutions transformed our online presence with a stunning website. Highly recommend!"</p>
+            <h4>- John Doe, CEO of TechCorp</h4>
+        </div>
+        <div class="client-review">
+            <p>"Their cloud computing services helped us scale our business effortlessly."</p>
+            <h4>- Jane Smith, Founder of Cloudify</h4>
+        </div>
+        <div class="client-review">
+            <p>"Thanks to their cybersecurity solutions, we feel confident about our data security."</p>
+            <h4>- Mark Wilson, CTO of SecureNet</h4>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit_contact" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 IT Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
