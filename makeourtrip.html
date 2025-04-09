@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Our Trip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #c20c51;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ce233d;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .tour-packages, .reviews, .hotels {
+            margin-bottom: 30px;
+        }
+        .tour-packages img, .hotels img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .form-section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-section input, .form-section select, .form-section button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #c5132e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Make Our Trip</h1>
+        <p>Your one-stop destination for all travel needs</p>
+    </header>
+    <nav>
+        <a href="#packages">Tour Packages</a>
+        <a href="#booking">Flight Booking</a>
+        <a href="#reviews">Client Reviews</a>
+        <a href="#hotels">Hotels</a>
+    </nav>
+    <div class="container">
+        <section id="packages" class="tour-packages">
+            <h2>Tour Packages</h2>
+            <p>Explore our exclusive national and international tour packages:</p>
+            <img src="tour-packages.jpg" alt="Tour Packages">
+        </section>
+        <section id="booking" class="form-section">
+            <h2>Flight Booking</h2>
+            <form>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination">
+                <label for="travel-date">Travel Date:</label>
+                <input type="date" id="travel-date" name="travel-date">
+                <label for="adults">Adults:</label>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="children">Children:</label>
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Client Reviews</h2>
+            <p>"Amazing experience! Highly recommend Make Our Trip!" - John Doe</p>
+            <p>"The best travel agency for international tours!" - Jane Smith</p>
+        </section>
+        <section id="hotels" class="hotels">
+            <h2>Hotels</h2>
+            <p>Stay at the best hotels during your trip:</p>
+            <img src="hotel.jpg" alt="Hotel">
+            <button>Book Hotel</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Make Our Trip. All rights reserved.</p>
+    </footer>
+</body>
+</html>

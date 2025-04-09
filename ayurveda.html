@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda Wellness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header-container {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-gallery {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        form {
+            margin-top: 1rem;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Ayurveda Wellness</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Ayurveda</h2>
+        <p>Ayurveda is an ancient system of medicine that promotes holistic health and wellness. Explore our range of natural products and services to rejuvenate your body and mind.</p>
+        <img src="images/herbs.jpg" alt="Herbs" class="responsive-img">
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="images/cow.jpg" alt="Cow Products" class="responsive-img">
+                <h3>Cow-Based Products</h3>
+                <p>Explore our range of ghee, milk, and other cow-based products.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/herbal-tea.jpg" alt="Herbal Tea" class="responsive-img">
+                <h3>Herbal Teas</h3>
+                <p>Natural and organic herbal teas for a healthy lifestyle.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/ayurvedic-oil.jpg" alt="Ayurvedic Oils" class="responsive-img">
+                <h3>Ayurvedic Oils</h3>
+                <p>Therapeutic oils for massage and relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Ayurvedic Consultations</li>
+            <li>Panchakarma Therapy</li>
+            <li>Yoga and Meditation Sessions</li>
+            <li>Diet and Lifestyle Guidance</li>
+        </ul>
+        <img src="images/doctor.jpg" alt="Doctor Consultation" class="responsive-img">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For appointments and inquiries, reach out to us:</p>
+        <ul>
+            <li>Phone: +1-234-567-890</li>
+            <li>Email: contact@ayurvedawellness.com</li>
+            <li>Address: 123 Ayurveda Street, Wellness City</li>
+        </ul>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ayurveda Wellness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

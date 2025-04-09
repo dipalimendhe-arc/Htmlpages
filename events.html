@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .reviews, .events, .budget {
+            margin-bottom: 20px;
+        }
+        .book-event {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .book-event button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book-event button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Event Management</h1>
+        <p>Your one-stop solution for all event needs</p>
+    </header>
+
+    <div class="section gallery">
+        <h2>Event Highlights</h2>
+        <img src="event1.jpg" alt="Event 1">
+        <img src="event2.jpg" alt="Event 2">
+        <img src="event3.jpg" alt="Event 3">
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <p>"Amazing service! Our wedding was perfect." - Sarah</p>
+        <p>"Highly professional and creative team." - John</p>
+        <p>"They made our corporate event a huge success!" - Emily</p>
+    </div>
+
+    <div class="section events">
+        <h2>Types of Events We Arrange</h2>
+        <ul>
+            <li>Weddings</li>
+            <li>Corporate Events</li>
+            <li>Birthday Parties</li>
+            <li>Concerts</li>
+            <li>Festivals</li>
+        </ul>
+    </div>
+
+    <div class="section budget">
+        <h2>Budget List</h2>
+        <ul>
+            <li>Small Events: $500 - $2000</li>
+            <li>Medium Events: $2000 - $5000</li>
+            <li>Large Events: $5000 and above</li>
+        </ul>
+    </div>
+
+    <div class="section book-event">
+        <h2>Book Your Event</h2>
+        <p>Ready to plan your event? Click below to get started!</p>
+        <button onclick="alert('Booking form coming soon!')">Book Now</button>
+    </div>
+</body>
+</html>

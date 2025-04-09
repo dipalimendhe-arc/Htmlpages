@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .teacher-list, .contact-details {
+            margin: 20px 0;
+        }
+        .teacher-list ul {
+            list-style-type: square;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form select, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dance Academy</h1>
+    </header>
+    <nav>
+        <a href="#teachers">Teachers</a>
+        <a href="#registration">Register</a>
+        <a href="#contact">Contact</a>
+        <a href="#dance-styles">Dance Styles</a>
+    </nav>
+    <section id="dance-styles">
+        <h2>Dance Styles</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div style="text-align: center;">
+                <img src="images/hip-hop.jpg" alt="Hip Hop" style="width: 200px; height: auto; border-radius: 10px;">
+                <p>Hip Hop</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/ballet.jpg" alt="Ballet" style="width: 200px; height: auto; border-radius: 10px;">
+                <p>Ballet</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/salsa.jpg" alt="Salsa" style="width: 200px; height: auto; border-radius: 10px;">
+                <p>Salsa</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/contemporary.jpg" alt="Contemporary" style="width: 200px; height: auto; border-radius: 10px;">
+                <p>Contemporary</p>
+            </div>
+        </div>
+    </section></div>
+    <section id="teachers" class="teacher-list">
+        <h2>Our Dance Teachers</h2>
+        <ul>
+            <li>John Doe - Hip Hop Specialist</li>
+            <li>Jane Smith - Ballet Instructor</li>
+            <li>Michael Brown - Salsa Expert</li>
+            <li>Emily Davis - Contemporary Dance</li>
+        </ul>
+    </section>
+    <section id="registration">
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="dance-style">Preferred Dance Style:</label>
+            <select id="dance-style" name="dance-style" required>
+                <option value="hip-hop">Hip Hop</option>
+                <option value="ballet">Ballet</option>
+                <option value="salsa">Salsa</option>
+                <option value="contemporary">Contemporary</option>
+            </select>
+            
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <section id="contact" class="contact-details">
+        <h2>Contact Us</h2>
+        <p>Email: info@danceacademy.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Dance Street, Cityville</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Dance Academy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

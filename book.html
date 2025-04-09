@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .book {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .book h2 {
+            margin: 0;
+        }
+        .book p {
+            margin: 5px 0;
+        }
+        .book .actions {
+            margin-top: 10px;
+        }
+        .book .actions button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book .actions .add-to-cart {
+            background-color: #28a745;
+            color: white;
+        }
+        .book .actions .buy-now {
+            background-color: #007bff;
+            color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Worldwide Book Shop</h1>
+    </header>
+    <nav>
+        <a href="#books">Books</a>
+        <a href="#authors">Authors</a>
+        <a href="#publishers">Publishers</a>
+        <a href="#enquiry">Enquiry</a>
+    </nav>
+    <div class="container">
+        <section id="books">
+            <h2>Books</h2>
+            <div class="book">
+                <h2>Book Title: The Great Gatsby</h2>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p>Publisher: Charles Scribner's Sons</p>
+                <p>Price: $10.99</p>
+                <p>Details: A classic novel of the Jazz Age.</p>
+                <div class="actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="book">
+                <h2>Book Title: 1984</h2>
+                <p>Author: George Orwell</p>
+                <p>Publisher: Secker & Warburg</p>
+                <p>Price: $8.99</p>
+                <p>Details: A dystopian social science fiction novel.</p>
+                <div class="actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="authors">
+            <h2>Authors</h2>
+            <p>F. Scott Fitzgerald</p>
+            <p>George Orwell</p>
+            <p>J.K. Rowling</p>
+            <p>J.R.R. Tolkien</p>
+        </section>
+        <section id="publishers">
+            <h2>Publishers</h2>
+            <p>Charles Scribner's Sons</p>
+            <p>Secker & Warburg</p>
+            <p>Penguin Random House</p>
+            <p>HarperCollins</p>
+        </section>
+        <section id="enquiry">
+            <h2>Enquiry</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Worldwide Book Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
